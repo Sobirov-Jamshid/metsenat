@@ -31,10 +31,10 @@ class StudentView(generics.ListCreateAPIView):
     permission_classes = [IsAdminUser]
     queryset = Student.objects.all()
     serializer_class = serializers.StudentSerializer
-    # filter_backends = [DateRangeFilterBackend, SearchFilter, DjangoFilterBackend]
-    # search_fields = ['full_name']
-    # filterset_fields = ['degree', 'university']
-    # date_range_filter_fields = ['date_created']
+    filter_backends = [DateRangeFilterBackend, SearchFilter, DjangoFilterBackend]
+    search_fields = ['full_name']
+    filterset_fields = ['degree', 'university']
+    date_range_filter_fields = ['date_created']
 
 
 class StudentDetailView(generics.RetrieveUpdateDestroyAPIView):

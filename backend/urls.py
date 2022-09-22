@@ -12,7 +12,7 @@ schema_view = get_schema_view(
         default_version="v1",
         description="Metsenat API",
         terms_of_service="",
-        contact=openapi.Contact(email="admin@metsenat-demo.uz"),
+        contact=openapi.Contact(email="admin@admin.uz"),
         license=openapi.License(name="License"),
     ),
     public=True,
